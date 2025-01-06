@@ -71,6 +71,10 @@ alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
 
+# Alt Linux EPM
+alias up="epm full-upgrade"
+alias cc="sudo apt-get clean && sudo apt-get autoclean && sudo apt-get check && flatpak uninstall --unused -y && sudo journalctl --vacuum-time=1weeks"
+
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
